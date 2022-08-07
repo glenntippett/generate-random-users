@@ -1,6 +1,6 @@
 {
   "name": "generate-random-user",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "lib/index.js",
   "license": "MIT",
   "files": [
