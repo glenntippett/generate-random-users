@@ -1,4 +1,6 @@
-function inputValidation(input) {
+import { Input } from "./types/generateUsersInput";
+
+function inputValidation(input: Input) {
   const { numOfUsers, gender } = input;
   const inputValidation = {
     error: false,
@@ -7,9 +9,6 @@ function inputValidation(input) {
 
   if (typeof numOfUsers !== "number") {
     inputValidation.message.push("numOfUsers must be of type number");
-  }
-  if (gender !== "male" || gender !== "female" || gender !== "both") {
-    inputValidation.message.push("gender must be male or female");
   }
 
   if (inputValidation.message.length > 0) {
