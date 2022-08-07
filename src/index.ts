@@ -16,6 +16,9 @@ const generateUsers = async (
     .get(`https://randomuser.me/api/?results=${numOfUsers}&gender=${gender}`)
     .then(function (response: any) {
       return response.data.results;
+    })
+    .catch(function (error: any) {
+      return `Error fetching data: ${error}`;
     });
   return response;
 };
